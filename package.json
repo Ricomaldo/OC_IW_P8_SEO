@@ -1,0 +1,7 @@
+{
+  "name": "siteweb_nina_carducci",
+  "packageManager": "yarn@4.5.2",
+  "dependencies": {
+    "sass": "^1.85.1"
+  }
+}
