@@ -20,7 +20,17 @@ header {
   align-items: center;
 }
 header h1 {
+  display: flex;
+  flex-direction: column;
   font-size: 26px;
+  font-weight: 800;
+}
+header h1 .job {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: #1c6474;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 header nav ul {
   display: flex;
@@ -66,20 +76,20 @@ header nav img {
 }
 #about #about-me {
   flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 #about #about-me__title {
   margin-top: 1em;
-  margin-bottom: 60px;
   font-size: 30px;
 }
 #about #about-me__introduction {
   font-family: "Spectral";
   font-weight: 800;
   font-style: italic;
-  width: 60%;
 }
 #about #about-me p {
-  width: 80%;
   font-size: 14px;
 }
 
@@ -231,6 +241,52 @@ header nav img {
   font-size: 22px;
 }
 
+footer {
+  background-color: white;
+  padding-inline: 100px;
+  padding-block: 30px;
+  border-top: 2px solid #1c6474;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  footer .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+footer .footer-branding {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-branding h2 {
+  font-size: 26px;
+  font-weight: 800;
+}
+footer .footer-branding p {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: #1c6474;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+footer .footer-contact {
+  font-size: 14px;
+}
+footer .footer-contact a {
+  text-decoration: none;
+  color: #000;
+}
+footer .footer-contact img {
+  width: 20px;
+}
+
 @media all and (max-width: 1180px) {
   .picture {
     flex: 2;
@@ -243,7 +299,7 @@ header nav img {
     margin-top: 0;
     margin-bottom: 1em;
   }
-  #about-me h6,
+  #about-me h2,
   #about-me p {
     width: 100%;
   }
@@ -268,17 +324,11 @@ header nav img {
     text-align: center;
     margin-top: 1em;
   }
+  #services {
+    width: 100%;
+  }
   #services .container {
     flex-direction: column;
-  }
-  .service {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 2em 0;
-  }
-  .service__description {
-    margin-bottom: 1em;
   }
   #services .container::before {
     width: 30%;
@@ -288,13 +338,22 @@ header nav img {
     left: auto;
     z-index: 0;
   }
+  #services .container .service {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 2em 0;
+  }
+  #services .container .service__description {
+    margin-bottom: 1em;
+  }
   #contact .container {
     flex-direction: column;
   }
   #contact .picture.right {
     margin-top: 1em;
   }
-  .picture.right::before {
+  #contact .picture.right::before {
     width: 100%;
     height: 30%;
     position: absolute;
@@ -308,18 +367,23 @@ header nav img {
     flex-direction: column;
     padding-inline: 0;
   }
-  .top-header .nav,
+  .top-header .nav {
+    width: 100%;
+    padding: 0;
+  }
   .top-header .nav ul {
     width: 100%;
-    padding: 0 0 0 0;
+    padding: 0;
   }
   .top-header .nav li {
     flex: 1;
     padding-block: 1em;
     text-align: center;
   }
-  .picture.left::before,
-  .picture.right::before {
+  .picture {
+    width: 80%;
+  }
+  .picture.left::before, .picture.right::before {
     height: 150px;
   }
   #services .container {
@@ -335,9 +399,6 @@ header nav img {
   }
   form {
     width: 100%;
-  }
-  .picture {
-    width: 80%;
   }
 }
 

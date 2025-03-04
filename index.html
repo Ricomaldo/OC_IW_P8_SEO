@@ -1,37 +1,113 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Title and Description -->
     <title>
-      Nina Carducci - Photographe Professionnelle | Shootings, Retouches, Albums
-      Personnalisés
+      Nina Carducci - Photographe Professionnelle à Bordeaux | Shootings,
+      Retouches, Albums Personnalisés
     </title>
     <meta
       name="description"
-      content="Découvrez le travail de Nina Carducci, photographe spécialisée dans les shootings, retouches et créations d'albums personnalisés. Explorez son portfolio et contactez-la pour immortaliser vos moments précieux."
+      content="Découvrez le travail de Nina Carducci, photographe basée à Bordeaux spécialisée dans les shootings, retouches et créations d'albums personnalisés. Explorez son portfolio et contactez-la pour immortaliser vos moments précieux."
     />
 
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Nina Carducci - Photographe à Bordeaux"
+    />
+    <meta
+      property="og:description"
+      content="Photographe spécialisée dans les shootings, retouches et albums personnalisés à Bordeaux."
+    />
+    <meta
+      property="og:image"
+      content="https://ninacarducci.github.io/assets/images/nina-carducci-photographe-portrait.webp"
+    />
+    <meta property="og:url" content="https://ninacarducci.github.io/" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Nina Carducci - Photographe à Bordeaux"
+    />
+    <meta
+      name="twitter:description"
+      content="Photographe spécialisée dans les shootings, retouches et albums personnalisés à Bordeaux."
+    />
+    <meta
+      name="twitter:image"
+      content="https://ninacarducci.github.io/assets/images/nina-carducci-photographe-portrait.webp"
+    />
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.css" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
-    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- Scripts -->
+    <script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/maugallery.js"></script>
-    <script src="./assets/scripts.js"></script>
+    <script src="./assets/maugallery.js" defer></script>
+    <script src="./assets/scripts.js" defer></script>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci - Photographe",
+        "image": "https://ninacarducci.github.io/assets/images/nina-carducci-photographe-portrait.jpg",
+        "@id": "https://ninacarducci.github.io/",
+        "url": "https://ninacarducci.github.io/",
+        "telephone": "+33556677889",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "addressRegion": "Nouvelle-Aquitaine",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "openingHours": "Mo-Fr 10:00-19:00",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "44.8514",
+          "longitude": "-0.6106"
+        },
+        "sameAs": ["https://www.instagram.com/ninacarducci.photo/?hl=fr"]
+      }
+    </script>
   </head>
+
   <body>
     <header>
-      <h1>Nina Carducci</h1>
+      <div itemscope itemtype="https://schema.org/Person">
+        <h1>
+          <span itemprop="name">Nina Carducci</span>
+          <span itemprop="jobTitle" class="job">
+            Photographe professionnelle à Bordeaux
+          </span>
+        </h1>
+      </div>
+
       <nav>
         <ul>
           <li><a href="#about">À propos</a></li>
@@ -42,8 +118,9 @@
             <a
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              ><img src="assets/images/instagram.png" alt=""
-            /></a>
+            >
+              <img src="assets/images/instagram.png" alt="Logo Instagram" />
+            </a>
           </li>
         </ul>
       </nav>
@@ -128,28 +205,28 @@
           />
         </div>
         <div id="about-me">
-          <h2 class="about-me__title">A propos de moi</h2>
+          <h2 class="about-me__title">
+            Découvrez Nina Carducci - Votre Photographe à Bordeaux
+          </h2>
           <strong class="about-me__introduction">
-            Devenir photographe était pour moi une évidence. Comme si j’y étais
-            prédestiné. Saisir un moment, une émotion, une situation, un
-            endroit, une lumière et les rendre immortels, voilà ce qui me fait
-            vibrer.
+            Devenir photographe a toujours été une évidence pour moi, comme une
+            vocation naturelle. Capturer un instant, une émotion, un lieu ou une
+            lumière et les immortaliser est ce qui me passionne profondément.
           </strong>
           <p>
-            Nous passons notre vie à chercher le bonheur, et lorsque nous y
-            touchons, nous n’avons qu’une envie : le figer au travers de
-            photographies pour le savourer avec les personnes qui sont
-            importantes à nos yeux, ou le partager au plus grand nombre. C’est
-            ce que je vous propose : saisir ces merveilleux moments au travers
-            de mon regard, mon approche, ma technique. Rendre ces moments
-            immortels, afin que vous puissiez y puiser de l’amour, du bonheur,
-            de la tendresse et de lumière à chaque fois que vous poserez les
-            yeux sur vos photos.
+            Tout au long de notre vie, nous cherchons le bonheur, et lorsque
+            nous le trouvons, nous souhaitons le capturer à travers des
+            photographies pour le partager avec ceux qui comptent pour nous, ou
+            avec le monde entier. C'est ce que je vous propose : immortaliser
+            ces moments précieux à travers mon regard unique, mon approche
+            artistique et ma technique. Chaque photo devient ainsi un trésor où
+            vous pourrez retrouver amour, bonheur, tendresse et lumière à chaque
+            regard.
           </p>
         </div>
       </section>
       <section id="gallery">
-        <h2 class="title">Portfolio</h2>
+        <h2 class="title">Explorez le Portfolio de Nina Carducci</h2>
         <div class="container py-3">
           <div class="gallery" style="display: none">
             <img
@@ -223,11 +300,11 @@
         </figure>
       </section>
       <section id="services">
-        <h2 class="title">Mes services</h2>
+        <h2 class="title">Mes Services Photographiques à Bordeaux</h2>
         <div class="container">
           <div class="service">
             <div class="service__description">
-              <h2>Shooting photo</h2>
+              <h3>Shooting photo</h3>
               <p>
                 Pour capturer vos moments les plus précieux et garder un
                 souvenir impérissable. Je me déplace en Île-de-France pour
@@ -241,7 +318,7 @@
           </div>
           <div class="service">
             <div class="service__description">
-              <h2>Retouches</h2>
+              <h3>Retouches</h3>
               <p>
                 Vous souhaitez retoucher vos photos pour un résultat
                 professionnel ? Bénéficier d’un rendu optimal pour vos
@@ -255,7 +332,7 @@
           </div>
           <div class="service">
             <div class="service__description">
-              <h2>Album photos</h2>
+              <h3>Album photos</h3>
               <p>
                 Partagez avec vos proches et vos clients les photos des moments
                 partagés ensemble à travers un album photo personnalisé
@@ -283,7 +360,10 @@
       <section id="contact">
         <div class="container">
           <div class="form-container">
-            <h2>Une question ? Une demande de devis ?</h2>
+            <h2>
+              Contactez-moi pour un devis personnalisé ou pour discuter de votre
+              projet
+            </h2>
             <p>
               N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24
               heures
@@ -312,5 +392,42 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-branding">
+          <h2>Nina Carducci</h2>
+          <p>Photographe professionnelle à Bordeaux</p>
+        </div>
+
+        <div class="footer-contact">
+          <p>📍 68 avenue Alsace-Lorraine, 33200 Bordeaux</p>
+          <p>📞 <a href="tel:0556677889">05 56 67 78 89</a></p>
+          <p>
+            📧
+            <a href="mailto:contact@nina-carducci.com"
+              >contact@nina-carducci.com</a
+            >
+          </p>
+          <p>
+            <img src="assets/images/instagram.png" alt="Logo Instagram" />
+
+            <a
+              href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+              target="_blank"
+            >
+              ninacarducci.photo</a
+            >
+          </p>
+        </div>
+
+        <div class="footer-social">
+          <a
+            href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+            target="_blank"
+          >
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
